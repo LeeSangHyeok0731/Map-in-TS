@@ -10,9 +10,9 @@ export default function MapInTS() {
   return (
     <>
       <div>
-        {Array.from(item.entries()).map((value, key) => {
+        {Array.from(item.entries()).map(([key, value]) => {
           return (
-            <h1>
+            <h1 key={key}>
               {key} = {value}
             </h1>
           );
